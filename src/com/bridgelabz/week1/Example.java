@@ -12,7 +12,8 @@ class ABC{
 	void m1(int x,int y)
 	{
 	
-		System.out.println("Th numbers are " + x + " and " +y);
+		System.out.println("Th numbers are " + x +  
+				" and " +y);
 	}
 }
 
