@@ -534,6 +534,7 @@ public static void getLargestSmallestNum(){
 	System.out.println("The Second smallest no. =" +S_Smallest);
 }
 
+
 /**
  * @Purpose :Program to find the reverse of the sentence.
  * @author Rahee Shah
@@ -543,31 +544,29 @@ public static void getLargestSmallestNum(){
  * @return
  */
  public static String wordReverse(String str) 
-{ 
-	int i = str.length() - 1; 
+{ 	
+	 int i = str.length() - 1; 
 	int start, end = i + 1; 
-	String result = ""; 
-	
+	String result = ""; 	
 	while(i >= 0) 
-	{ 
-		if(str.charAt(i) == ' ') 
-		{ 
-			start = i + 1; 
-			while(start != end) 
-				result = result + str.charAt(start++); 
-			
-			result =result + ' '; 
-			
-			end = i; 
-		} 
-		i--; 
-	} 
-	
-	start = 0; 
-	while(start != end) 
-		result = result + str.charAt(start++); 
-	
-	return result; 
+    { 
+        if(str.charAt(i) == ' ') 
+        { 
+            start = i + 1; 
+            while(start != end) 
+                result =result + str.charAt(start++); 
+              
+            result =result + ' '; 
+            end = i; 
+        } 
+        i--; 
+    } 
+      
+    start = 0; 
+    while(start != end) 
+        result = result + str.charAt(start++); 
+      
+    return result; 
 } 
 
  /**
@@ -641,6 +640,84 @@ return month;
   * @since 23-12-2018
   * @param n
   */
+ public static void getK() {
+	 int n= 5,i,j,k;
+		for (i=0;i<=8;i++) {
+			for(j=0;j<2;j++) {
+				System.out.print("*");
+			}
+			for(k=0;k<=5;k++) {
+				if(k==n) {
+					System.out.print("**");
+				}
+				else {
+					System.out.print(" ");
+				}
+			}
+			if(i<=4) {
+				n--;
+			}
+			else if(i<=8) {
+				n++;
+			}
+			System.out.println(" ");
+		}
+ }
+ public static void getD() {
+	 System.out.println("         ");
+		int x, y,z;
+		for(x=0;x<=11;x++) {
+			for(y=0;y<=2;y++) {
+				System.out.print("*");	
+			}
+			for(z=1;z<=5;z++) {
+				if(x>=0 && x<2 || x>9 && x<=11 || z==5 ) {
+				System.out.print("**");
+			}else {
+				System.out.print("  ");
+			}
+				}
+			for(y=0;y<=1;y++) {
+				if(x>=0 && x<2 || x>9 && x<=11) {System.out.print(" ");
+				}
+				}
+			System.out.println();
+		}
+ }
+ 
+ public static void getW() {
+	 System.out.println("        ");
+		
+		int p,q,r,s,t;
+		for(p=0;p<=11;p++) {
+			for(q=0;q<=2;q++) {
+				System.out.print("*");
+			}
+			for(r=10;r>=p;r--)
+			{
+				System.out.print(" ");
+			}
+			for(q=0;q<=2;q++) {
+				System.out.print("*");
+			}
+			for(s=1;s<=p;s++) {
+				System.out.print("  ");
+			}
+			for(q=0;q<=2;q++) {
+				System.out.print("*");
+			}
+			
+			for(r=10;r>=p;r--)
+			{
+				System.out.print(" ");
+			}
+			for(q=0;q<=2;q++) {
+				System.out.print("*");
+			}
+			
+			System.out.printf("\n");
+		}
+ }
 }
 
 
